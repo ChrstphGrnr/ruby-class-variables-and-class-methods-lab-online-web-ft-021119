@@ -1,5 +1,5 @@
 class Song
-attr_accessor :genres :artists :name
+attr_accessor :genres, :artists, :name
 @@count = 0
 @@genres = []
 @@artists = []
@@ -33,7 +33,5 @@ attr_accessor :genres :artists :name
     end
     genre_hash
   end
-
-
 
 end
