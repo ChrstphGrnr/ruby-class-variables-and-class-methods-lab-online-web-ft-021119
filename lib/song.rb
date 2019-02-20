@@ -38,4 +38,15 @@ attr_accessor :name, :artist, :genre
     genre_hash
   end
 
+  def self.artist_count
+    artist_hash = {}
+    @@artists.uniq.each do |name| 
+      artist_hash[name] = 0
+    end
+    @@artists.each do |name|
+      artist_hash[name] += 1
+    end
+    artist_hash
+  end    
+
 end
