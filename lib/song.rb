@@ -8,7 +8,7 @@ attr_accessor :genres, :artist, :name
 
     @@artists << artist
     @@genres << genre
-    @@number_of_songs += 1
+    @@count += 1
   end
 
   def self.count
